@@ -1,0 +1,234 @@
+{
+	"info": {
+		"_postman_id": "8bcd29dd-66ca-4926-964e-8a4ce555ff53",
+		"name": "Azure Security APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Azure Advisor",
+			"item": [
+				{
+					"name": "Recommendation List",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Im5PbzNaRHJPRFhFSzFqS1doWHNsSFJfS1hFZyIsImtpZCI6Im5PbzNaRHJPRFhFSzFqS1doWHNsSFJfS1hFZyJ9.eyJhdWQiOiJodHRwczovL21hbmFnZW1lbnQuYXp1cmUuY29tIiwiaXNzIjoiaHR0cHM6Ly9zdHMud2luZG93cy5uZXQvZTRlMzQwMzgtZWExZi00ODgyLWI2ZTgtY2NkNzc2NDU5Y2EwLyIsImlhdCI6MTYxNDgzMzI5NywibmJmIjoxNjE0ODMzMjk3LCJleHAiOjE2MTQ4MzcxOTcsImFjciI6IjEiLCJhaW8iOiJFMlpnWU5EenFrenVMdC9Xb1Z5MXc2Tkk5K0o1WmRXczVqL0JiZ0taZHhYVE5tOHFsd01BIiwiYW1yIjpbInB3ZCJdLCJhcHBpZCI6ImUxNDU2ZDlmLThmNWQtNGI1Ni04ZDNhLTdkMzZjOWM3ZDI4YSIsImFwcGlkYWNyIjoiMSIsImZhbWlseV9uYW1lIjoiU3VraGxlY2hhIiwiZ2l2ZW5fbmFtZSI6Ik1haGltYSIsImdyb3VwcyI6WyIwZTQwYjZkZC0zOWZlLTRhZGQtYjk5Mi02NjU1NzQzZGU5YzciLCJlNjdmMTM4YS0xOTQ5LTQyNmEtODMyMS1jNzNjYzI1NzZmZmYiLCJhMjk1Yjg1NC1lYmY3LTRkYzktYTk2Yi00Yjk1NDU3YmZlMTIiLCJiMmQ5YTMxOS01NzkwLTQ2MGMtOTFmOS0yNWJhZTRmNmY0YTAiLCJjNzQyYTU4Ni0wMjc5LTQ3NzQtOWM5Ni1kMzgxYzc5OTAwNmQiLCJlYTI3ZmQyNC03Y2M5LTQyZDMtYjg0Ni03MzU0MGE3YmQxZGEiLCI0YTBmYTUxZC01YTcwLTRiZjItODFmMi03YTJiYTYzMjgzZjciXSwiaXBhZGRyIjoiMTIyLjE2MS4yNDIuMTMxIiwibmFtZSI6Ik1haGltYSBTdWtobGVjaGEiLCJvaWQiOiI2ZDExYWRmOS01OGYxLTQyNTEtYTI4OS01ZDBkZDYwZmM2ZmUiLCJwdWlkIjoiMTAwMzIwMDBCMDcyRjBEMSIsInJoIjoiMC5BQUFBT0VEajVCX3Fna2kyNk16WGRrV2NvSjl0UmVGZGoxWkxqVHA5TnNuSDBvcEpBSHMuIiwic2NwIjoidXNlcl9pbXBlcnNvbmF0aW9uIiwic3ViIjoidHoxZHlsOTdfY1p0WU5ydllmRlpBMnNKQ2tIbFFzV0lydnhaVTU4NlBrUSIsInRpZCI6ImU0ZTM0MDM4LWVhMWYtNDg4Mi1iNmU4LWNjZDc3NjQ1OWNhMCIsInVuaXF1ZV9uYW1lIjoibWFoaW1hLnN1a2hsZWNoYUBjZWxlYmFsdGVjaC5jb20iLCJ1cG4iOiJtYWhpbWEuc3VraGxlY2hhQGNlbGViYWx0ZWNoLmNvbSIsInV0aSI6Ik05WXZ4LW5PTmt1Y3NzbU9pTDBsQUEiLCJ2ZXIiOiIxLjAiLCJ3aWRzIjpbIjRhNWQ4ZjY1LTQxZGEtNGRlNC04OTY4LWUwMzViNjUzMzljZiIsImM0ZTM5YmQ5LTExMDAtNDZkMy04YzY1LWZiMTYwZGEwMDcxZiIsIjE1OGMwNDdhLWM5MDctNDU1Ni1iN2VmLTQ0NjU1MWE2YjVmNyIsImIxYmUxYzNlLWI2NWQtNGYxOS04NDI3LWY2ZmEwZDk3ZmViOSIsImNmMWMzOGU1LTM2MjEtNDAwNC1hN2NiLTg3OTYyNGRjZWQ3YyIsIjliODk1ZDkyLTJjZDMtNDRjNy05ZDAyLWE2YWMyZDVlYTVjMyIsImI3OWZiZjRkLTNlZjktNDY4OS04MTQzLTc2YjE5NGU4NTUwOSJdLCJ4bXNfdGNkdCI6MTQ4MzE3ODg2MH0.SI5tHKcWp_nT4zAfgjfS7xxnmwlrFX9vmMLT84myMVp9rIvUCAYQnzGFrYE32jldnaUx_rb8iJxh-2mgHvkE3WG_Us0nba0diO0BxsNsVed_bMXcSv7vbjUg5wBtO7vbfa9QSLpkiXOKGYKo6ibEOuDVET2jOcvHjJX4FoGs0g2GuDmw7q3KqsulUGeBaefpEl3LVI3xAaG-HA2ocffUppxgjl1Pa4v6vjy8ZRr2VMA8uf8zzTonXsZ136AGeQAKp6L-7e8RkEBwAR8M04NyADfIQuG9dsG4y2vs2lga2W00IEL-7AAqoFLVcTIZEZ4Ofk8RQJbaPAt2bKqi8m4WrA",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://management.azure.com/subscriptions/01ce3075-23cc-4058-9df8-b6888684a736/providers/Microsoft.Advisor/recommendations?api-version=2017-04-19&- $filter=Category eq 'Security",
+							"protocol": "https",
+							"host": [
+								"management",
+								"azure",
+								"com"
+							],
+							"path": [
+								"subscriptions",
+								"01ce3075-23cc-4058-9df8-b6888684a736",
+								"providers",
+								"Microsoft.Advisor",
+								"recommendations"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "2017-04-19"
+								},
+								{
+									"key": "- $filter",
+									"value": "Category eq 'Security"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Security Center",
+			"item": [
+				{
+					"name": "Alert List",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Im5PbzNaRHJPRFhFSzFqS1doWHNsSFJfS1hFZyIsImtpZCI6Im5PbzNaRHJPRFhFSzFqS1doWHNsSFJfS1hFZyJ9.eyJhdWQiOiJodHRwczovL21hbmFnZW1lbnQuYXp1cmUuY29tIiwiaXNzIjoiaHR0cHM6Ly9zdHMud2luZG93cy5uZXQvZTRlMzQwMzgtZWExZi00ODgyLWI2ZTgtY2NkNzc2NDU5Y2EwLyIsImlhdCI6MTYxNDgzMzI5NywibmJmIjoxNjE0ODMzMjk3LCJleHAiOjE2MTQ4MzcxOTcsImFjciI6IjEiLCJhaW8iOiJFMlpnWU5EenFrenVMdC9Xb1Z5MXc2Tkk5K0o1WmRXczVqL0JiZ0taZHhYVE5tOHFsd01BIiwiYW1yIjpbInB3ZCJdLCJhcHBpZCI6ImUxNDU2ZDlmLThmNWQtNGI1Ni04ZDNhLTdkMzZjOWM3ZDI4YSIsImFwcGlkYWNyIjoiMSIsImZhbWlseV9uYW1lIjoiU3VraGxlY2hhIiwiZ2l2ZW5fbmFtZSI6Ik1haGltYSIsImdyb3VwcyI6WyIwZTQwYjZkZC0zOWZlLTRhZGQtYjk5Mi02NjU1NzQzZGU5YzciLCJlNjdmMTM4YS0xOTQ5LTQyNmEtODMyMS1jNzNjYzI1NzZmZmYiLCJhMjk1Yjg1NC1lYmY3LTRkYzktYTk2Yi00Yjk1NDU3YmZlMTIiLCJiMmQ5YTMxOS01NzkwLTQ2MGMtOTFmOS0yNWJhZTRmNmY0YTAiLCJjNzQyYTU4Ni0wMjc5LTQ3NzQtOWM5Ni1kMzgxYzc5OTAwNmQiLCJlYTI3ZmQyNC03Y2M5LTQyZDMtYjg0Ni03MzU0MGE3YmQxZGEiLCI0YTBmYTUxZC01YTcwLTRiZjItODFmMi03YTJiYTYzMjgzZjciXSwiaXBhZGRyIjoiMTIyLjE2MS4yNDIuMTMxIiwibmFtZSI6Ik1haGltYSBTdWtobGVjaGEiLCJvaWQiOiI2ZDExYWRmOS01OGYxLTQyNTEtYTI4OS01ZDBkZDYwZmM2ZmUiLCJwdWlkIjoiMTAwMzIwMDBCMDcyRjBEMSIsInJoIjoiMC5BQUFBT0VEajVCX3Fna2kyNk16WGRrV2NvSjl0UmVGZGoxWkxqVHA5TnNuSDBvcEpBSHMuIiwic2NwIjoidXNlcl9pbXBlcnNvbmF0aW9uIiwic3ViIjoidHoxZHlsOTdfY1p0WU5ydllmRlpBMnNKQ2tIbFFzV0lydnhaVTU4NlBrUSIsInRpZCI6ImU0ZTM0MDM4LWVhMWYtNDg4Mi1iNmU4LWNjZDc3NjQ1OWNhMCIsInVuaXF1ZV9uYW1lIjoibWFoaW1hLnN1a2hsZWNoYUBjZWxlYmFsdGVjaC5jb20iLCJ1cG4iOiJtYWhpbWEuc3VraGxlY2hhQGNlbGViYWx0ZWNoLmNvbSIsInV0aSI6Ik05WXZ4LW5PTmt1Y3NzbU9pTDBsQUEiLCJ2ZXIiOiIxLjAiLCJ3aWRzIjpbIjRhNWQ4ZjY1LTQxZGEtNGRlNC04OTY4LWUwMzViNjUzMzljZiIsImM0ZTM5YmQ5LTExMDAtNDZkMy04YzY1LWZiMTYwZGEwMDcxZiIsIjE1OGMwNDdhLWM5MDctNDU1Ni1iN2VmLTQ0NjU1MWE2YjVmNyIsImIxYmUxYzNlLWI2NWQtNGYxOS04NDI3LWY2ZmEwZDk3ZmViOSIsImNmMWMzOGU1LTM2MjEtNDAwNC1hN2NiLTg3OTYyNGRjZWQ3YyIsIjliODk1ZDkyLTJjZDMtNDRjNy05ZDAyLWE2YWMyZDVlYTVjMyIsImI3OWZiZjRkLTNlZjktNDY4OS04MTQzLTc2YjE5NGU4NTUwOSJdLCJ4bXNfdGNkdCI6MTQ4MzE3ODg2MH0.SI5tHKcWp_nT4zAfgjfS7xxnmwlrFX9vmMLT84myMVp9rIvUCAYQnzGFrYE32jldnaUx_rb8iJxh-2mgHvkE3WG_Us0nba0diO0BxsNsVed_bMXcSv7vbjUg5wBtO7vbfa9QSLpkiXOKGYKo6ibEOuDVET2jOcvHjJX4FoGs0g2GuDmw7q3KqsulUGeBaefpEl3LVI3xAaG-HA2ocffUppxgjl1Pa4v6vjy8ZRr2VMA8uf8zzTonXsZ136AGeQAKp6L-7e8RkEBwAR8M04NyADfIQuG9dsG4y2vs2lga2W00IEL-7AAqoFLVcTIZEZ4Ofk8RQJbaPAt2bKqi8m4WrA",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://management.azure.com/subscriptions/01ce3075-23cc-4058-9df8-b6888684a736/providers/Microsoft.Security/alerts?api-version=2020-01-01",
+							"protocol": "https",
+							"host": [
+								"management",
+								"azure",
+								"com"
+							],
+							"path": [
+								"subscriptions",
+								"01ce3075-23cc-4058-9df8-b6888684a736",
+								"providers",
+								"Microsoft.Security",
+								"alerts"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "2020-01-01"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Secure Score List",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Im5PbzNaRHJPRFhFSzFqS1doWHNsSFJfS1hFZyIsImtpZCI6Im5PbzNaRHJPRFhFSzFqS1doWHNsSFJfS1hFZyJ9.eyJhdWQiOiJodHRwczovL21hbmFnZW1lbnQuYXp1cmUuY29tIiwiaXNzIjoiaHR0cHM6Ly9zdHMud2luZG93cy5uZXQvZTRlMzQwMzgtZWExZi00ODgyLWI2ZTgtY2NkNzc2NDU5Y2EwLyIsImlhdCI6MTYxNDgzMzI5NywibmJmIjoxNjE0ODMzMjk3LCJleHAiOjE2MTQ4MzcxOTcsImFjciI6IjEiLCJhaW8iOiJFMlpnWU5EenFrenVMdC9Xb1Z5MXc2Tkk5K0o1WmRXczVqL0JiZ0taZHhYVE5tOHFsd01BIiwiYW1yIjpbInB3ZCJdLCJhcHBpZCI6ImUxNDU2ZDlmLThmNWQtNGI1Ni04ZDNhLTdkMzZjOWM3ZDI4YSIsImFwcGlkYWNyIjoiMSIsImZhbWlseV9uYW1lIjoiU3VraGxlY2hhIiwiZ2l2ZW5fbmFtZSI6Ik1haGltYSIsImdyb3VwcyI6WyIwZTQwYjZkZC0zOWZlLTRhZGQtYjk5Mi02NjU1NzQzZGU5YzciLCJlNjdmMTM4YS0xOTQ5LTQyNmEtODMyMS1jNzNjYzI1NzZmZmYiLCJhMjk1Yjg1NC1lYmY3LTRkYzktYTk2Yi00Yjk1NDU3YmZlMTIiLCJiMmQ5YTMxOS01NzkwLTQ2MGMtOTFmOS0yNWJhZTRmNmY0YTAiLCJjNzQyYTU4Ni0wMjc5LTQ3NzQtOWM5Ni1kMzgxYzc5OTAwNmQiLCJlYTI3ZmQyNC03Y2M5LTQyZDMtYjg0Ni03MzU0MGE3YmQxZGEiLCI0YTBmYTUxZC01YTcwLTRiZjItODFmMi03YTJiYTYzMjgzZjciXSwiaXBhZGRyIjoiMTIyLjE2MS4yNDIuMTMxIiwibmFtZSI6Ik1haGltYSBTdWtobGVjaGEiLCJvaWQiOiI2ZDExYWRmOS01OGYxLTQyNTEtYTI4OS01ZDBkZDYwZmM2ZmUiLCJwdWlkIjoiMTAwMzIwMDBCMDcyRjBEMSIsInJoIjoiMC5BQUFBT0VEajVCX3Fna2kyNk16WGRrV2NvSjl0UmVGZGoxWkxqVHA5TnNuSDBvcEpBSHMuIiwic2NwIjoidXNlcl9pbXBlcnNvbmF0aW9uIiwic3ViIjoidHoxZHlsOTdfY1p0WU5ydllmRlpBMnNKQ2tIbFFzV0lydnhaVTU4NlBrUSIsInRpZCI6ImU0ZTM0MDM4LWVhMWYtNDg4Mi1iNmU4LWNjZDc3NjQ1OWNhMCIsInVuaXF1ZV9uYW1lIjoibWFoaW1hLnN1a2hsZWNoYUBjZWxlYmFsdGVjaC5jb20iLCJ1cG4iOiJtYWhpbWEuc3VraGxlY2hhQGNlbGViYWx0ZWNoLmNvbSIsInV0aSI6Ik05WXZ4LW5PTmt1Y3NzbU9pTDBsQUEiLCJ2ZXIiOiIxLjAiLCJ3aWRzIjpbIjRhNWQ4ZjY1LTQxZGEtNGRlNC04OTY4LWUwMzViNjUzMzljZiIsImM0ZTM5YmQ5LTExMDAtNDZkMy04YzY1LWZiMTYwZGEwMDcxZiIsIjE1OGMwNDdhLWM5MDctNDU1Ni1iN2VmLTQ0NjU1MWE2YjVmNyIsImIxYmUxYzNlLWI2NWQtNGYxOS04NDI3LWY2ZmEwZDk3ZmViOSIsImNmMWMzOGU1LTM2MjEtNDAwNC1hN2NiLTg3OTYyNGRjZWQ3YyIsIjliODk1ZDkyLTJjZDMtNDRjNy05ZDAyLWE2YWMyZDVlYTVjMyIsImI3OWZiZjRkLTNlZjktNDY4OS04MTQzLTc2YjE5NGU4NTUwOSJdLCJ4bXNfdGNkdCI6MTQ4MzE3ODg2MH0.SI5tHKcWp_nT4zAfgjfS7xxnmwlrFX9vmMLT84myMVp9rIvUCAYQnzGFrYE32jldnaUx_rb8iJxh-2mgHvkE3WG_Us0nba0diO0BxsNsVed_bMXcSv7vbjUg5wBtO7vbfa9QSLpkiXOKGYKo6ibEOuDVET2jOcvHjJX4FoGs0g2GuDmw7q3KqsulUGeBaefpEl3LVI3xAaG-HA2ocffUppxgjl1Pa4v6vjy8ZRr2VMA8uf8zzTonXsZ136AGeQAKp6L-7e8RkEBwAR8M04NyADfIQuG9dsG4y2vs2lga2W00IEL-7AAqoFLVcTIZEZ4Ofk8RQJbaPAt2bKqi8m4WrA",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://management.azure.com/subscriptions/01ce3075-23cc-4058-9df8-b6888684a736/providers/Microsoft.Security/secureScores?api-version=2020-01-01",
+							"protocol": "https",
+							"host": [
+								"management",
+								"azure",
+								"com"
+							],
+							"path": [
+								"subscriptions",
+								"01ce3075-23cc-4058-9df8-b6888684a736",
+								"providers",
+								"Microsoft.Security",
+								"secureScores"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "2020-01-01"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Assessments List",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{bearerToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://management.azure.com/subscriptions/01ce3075-23cc-4058-9df8-b6888684a736/providers/Microsoft.Security/assessments?api-version=2020-01-01",
+							"protocol": "https",
+							"host": [
+								"management",
+								"azure",
+								"com"
+							],
+							"path": [
+								"subscriptions",
+								"01ce3075-23cc-4058-9df8-b6888684a736",
+								"providers",
+								"Microsoft.Security",
+								"assessments"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "2020-01-01"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Get AAD Token",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(pm.info.requestName, () => {",
+							"    pm.response.to.not.be.error;",
+							"    pm.response.to.not.have.jsonBody('error');",
+							"});",
+							"pm.globals.set(\"bearerToken\", pm.response.json().access_token);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "583de6ac-353e-403e-9b51-0f79e550e938",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "BHwqCKg4XrNB.M91~tQwtiL4z9DEo~9h0m",
+							"type": "text"
+						},
+						{
+							"key": "resource",
+							"value": "https://management.azure.com/",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://login.microsoftonline.com/efb6491d-c8dc-4436-a44b-a5021a1c2539/oauth2/token",
+					"protocol": "https",
+					"host": [
+						"login",
+						"microsoftonline",
+						"com"
+					],
+					"path": [
+						"efb6491d-c8dc-4436-a44b-a5021a1c2539",
+						"oauth2",
+						"token"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
